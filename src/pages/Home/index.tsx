@@ -1,22 +1,18 @@
 import React from "react";
 import Banner from "./Banner";
+import EventSection from "./EventSection";
+import Sponsors from "./Sponsors";
 
-import { Container } from "./styles";
+import { Container, SectionsContainer } from "./styles";
 
 const Home: React.FC = () => {
   return (
-    <Container> 
+    <Container>
       <Banner />
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
+      <SectionsContainer>
+        <EventSection />
+        <Sponsors />
+      </SectionsContainer>
     </Container>
   );
 };

@@ -2,13 +2,17 @@ import styled from "styled-components";
 
 import { simpleFlex } from "theme/mixins";
 
-import arrowBorder from 'assets/arrow-border.svg'
-import dashedsLine from 'assets/dasheds-line.svg'
-import arrowDown from 'assets/arrow-down.svg'
+import arrowBorder from "assets/arrow-border.svg";
+import dashedsLine from "assets/dasheds-line.svg";
+import arrowDown from "assets/arrow-down.svg";
 
 export const Container = styled.div`
-  min-height: calc(100vh - 94px);
-  background: radial-gradient(50.43% 50.43% at 49.78% 49.57%, rgba(91, 9, 154, 0.4) 0%, rgba(168, 64, 247, 0) 100%);
+  position: relative;
+  background: radial-gradient(
+    50.43% 50.43% at 49.78% 49.57%,
+    rgba(91, 9, 154, 0.4) 0%,
+    rgba(168, 64, 247, 0) 100%
+  );
   width: 100%;
   display: flex;
   justify-content: center;
@@ -26,7 +30,13 @@ export const Container = styled.div`
 
 export const TextPrincipal = styled.h1`
   font-size: 62px;
-  background: linear-gradient(to right, var(--yellow-500), var(--yellow-500), var(--pink-500));
+  line-height: 65px;
+  background: linear-gradient(
+    to right,
+    var(--yellow-500),
+    var(--yellow-500),
+    var(--pink-500)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
@@ -39,19 +49,40 @@ export const TextPrincipal = styled.h1`
   }
 `;
 
-export const TextSecond = styled.h2`
-  font-size: 16px;
-  color: var(--yellow-500);
-  text-align: center;
+export const TextSecond = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  h2 {
+    font-size: 16px;
+    margin-top: 5px;
+    color: var(--yellow-500);
+    font-weight: 400;
+    text-align: center;
+  }
+  width: 100%;
 
   &:after {
     display: block;
     max-width: 490px;
     width: 100%;
     height: 20px;
-    content: '';
+    content: "";
     background: url(${arrowBorder}) center;
-    margin: 5px auto 0;
+    margin: 7px auto 0;
+    margin-left: 29px;
+  }
+
+  @media (max-width: 768px) {
+    h2 {
+      max-width: 241px;
+      margin-bottom: 18px;
+    }
+    &:after {
+      margin-left: 6px;
+    }
   }
 `;
 
@@ -82,14 +113,19 @@ export const MountainImage = styled.img`
 `;
 
 export const StartButton = styled.div`
+  font-family: "Anthu";
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  cursor: pointer;
   ${simpleFlex()};
   color: var(--white);
   flex-direction: column;
-  bottom: -50px;
-  position: absolute;
+  margin-top: 35px;
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     width: 3px;
     height: 45px;
@@ -98,7 +134,7 @@ export const StartButton = styled.div`
   }
 
   &::after {
-    content: '';
+    content: "";
     display: block;
     width: 15px;
     height: 20px;

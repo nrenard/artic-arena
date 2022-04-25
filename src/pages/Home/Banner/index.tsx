@@ -1,10 +1,17 @@
-import React from 'react';
+import React from "react";
 
-import ballsRainbow from 'assets/balls-rainbow.svg'
-import logo from 'assets/logo.svg'
-import mountain from 'assets/mountain.png'
+import ballsRainbow from "assets/balls-rainbow.svg";
+import logo from "assets/logo.svg";
+import mountain from "assets/mountain.png";
 
-import { Container, MountainImage, StartButton, TextPrincipal, TextSecond, TopImages } from './styles';
+import {
+  Container,
+  MountainImage,
+  StartButton,
+  TextPrincipal,
+  TextSecond,
+  TopImages,
+} from "./styles";
 
 const Banner: React.FC = () => {
   return (
@@ -17,16 +24,16 @@ const Banner: React.FC = () => {
 
         <TextPrincipal>Are you ready?</TextPrincipal>
 
-        <TextSecond>Join the best gamers under the polar night</TextSecond>
+        <TextSecond>
+          <h2>Join the best gamers under the polar night</h2>
+        </TextSecond>
 
-        <StartButton>
-          sTART
-        </StartButton>
+        <StartButton>START</StartButton>
       </div>
 
       <MountainImage src={mountain} alt="mountain" />
     </Container>
   );
-}
+};
 
 export default Banner;
