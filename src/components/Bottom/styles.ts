@@ -55,3 +55,12 @@ export const WrapperSponsors = styled.div`
     width: 100px;
   }
 `;
+
+export const LogoMobile = styled.img`
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+`

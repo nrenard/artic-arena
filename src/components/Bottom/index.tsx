@@ -2,14 +2,17 @@ import SocialMenu from 'components/SocialMenu';
 import React from 'react';
 
 import fakeLogo from 'assets/fake-logo.png';
+import bigLogo from 'assets/big-logo.svg';
 
-import { Container, FirstLine, SecondLine, WrapperBottomMenu, WrapperSponsors } from './styles';
+import { Container, FirstLine, LogoMobile, SecondLine, WrapperBottomMenu, WrapperSponsors } from './styles';
 
 const Bottom: React.FC = () => {
   return (
     <Container>
       <FirstLine />
       <SecondLine />
+
+      <LogoMobile src={bigLogo} />
 
       <WrapperBottomMenu>
         <SocialMenu />
