@@ -36,11 +36,11 @@ export const SecondLine = styled.div`
 export const WrapperBottomMenu = styled.div`
   ${simpleFlex('center')};
   ${container};
-  margin: 30px 0;
+  margin: 30px auto;
 
   @media (min-width: 990px) {
     ${simpleFlex('flex-end')};
-    margin-bottom: 70px;
+    margin: 0 auto 70px;
   }
 `;
 
