@@ -5,15 +5,19 @@ import { simpleFlex } from "theme/mixins";
 import arrowBorder from "assets/arrow-border.svg";
 import dashedsLine from "assets/dasheds-line.svg";
 import arrowDown from "assets/arrow-down.svg";
+import mountain from "assets/mountain.png";
 
 export const Container = styled.div`
   min-height: calc(100vh - 94px);
   position: relative;
-  background: radial-gradient(
+  background: url(${mountain}), radial-gradient(
     50.43% 50.43% at 49.78% 49.57%,
     rgba(91, 9, 154, 0.4) 0%,
     rgba(168, 64, 247, 0) 100%
   );
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -21,6 +25,10 @@ export const Container = styled.div`
   > div {
     ${simpleFlex('space-between')}
     flex-direction: column;
+  }
+
+  @media (min-width: 768px) {
+    background-size: contain;
   }
 `;
 

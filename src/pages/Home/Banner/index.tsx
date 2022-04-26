@@ -34,7 +34,7 @@ const Banner: React.FC = () => {
         <StartButton href="#section">START</StartButton>
       </div>
 
-      <MountainImage src={mountain} alt="mountain" />
+      {/* <MountainImage src={mountain} alt="mountain" /> */}
     </Container>
   );
 };
