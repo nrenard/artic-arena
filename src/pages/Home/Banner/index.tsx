@@ -2,11 +2,9 @@ import React from "react";
 
 import ballsRainbow from "assets/balls-rainbow.svg";
 import logo from "assets/logo.svg";
-import mountain from "assets/mountain.png";
 
 import {
   Container,
-  MountainImage,
   StartButton,
   TextPrincipal,
   TextSecond,
