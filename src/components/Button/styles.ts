@@ -8,6 +8,7 @@ export const Container = styled.button`
   font-weight: 400;
   border: 0px;
   background: none;
+  letter-spacing: 3px;
 
   img {
     margin-left: 15px;

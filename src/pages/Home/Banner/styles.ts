@@ -3,18 +3,18 @@ import styled from "styled-components";
 import { simpleFlex } from "theme/mixins";
 
 import arrowBorder from "assets/arrow-border.svg";
-import dashedsLine from "assets/dasheds-line.svg";
+import dashedsLine from "assets/dasheds-line.png";
 import arrowDown from "assets/arrow-down.svg";
 import mountain from "assets/mountain.png";
 
 export const Container = styled.div`
-  min-height: calc(100vh - 94px);
   position: relative;
-  background: url(${mountain}), radial-gradient(
-    50.43% 50.43% at 49.78% 49.57%,
-    rgba(91, 9, 154, 0.4) 0%,
-    rgba(168, 64, 247, 0) 100%
-  );
+  background: url(${mountain}),
+    radial-gradient(
+      50.43% 50.43% at 49.78% 49.57%,
+      rgba(91, 9, 154, 0.4) 0%,
+      rgba(168, 64, 247, 0) 100%
+    );
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -22,8 +22,13 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
 
+  @media (max-width: 769px) {
+    background-size: initial;
+    background-position: center 22%;
+  }
+
   > div {
-    ${simpleFlex('space-between')}
+    ${simpleFlex("space-between")}
     flex-direction: column;
   }
 
@@ -133,16 +138,18 @@ export const StartButton = styled.a`
   flex-direction: column;
   margin-top: 35px;
   transform: translate(0, 50px);
-  ${simpleFlex('space-between')};
+  ${simpleFlex("space-between")};
   z-index: 1;
   position: relative;
 
   &::before {
     content: "";
     display: block;
-    width: 3px;
+    width: 20px;
     height: 45px;
     background: url(${dashedsLine}) center;
+    background-size: contain;
+    background-repeat: no-repeat;
     margin-bottom: 5px;
   }
 

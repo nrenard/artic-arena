@@ -1,14 +1,36 @@
 import styled from "styled-components";
 import { simpleFlex } from "theme/mixins";
 
+import mountain from "assets/mountainMobile.png";
+
 export const Container = styled.div`
-  margin-top: 180px;
+  margin-top: 120px;
+  @media (min-width: 769px) {
+    margin-top: 180px;
+  }
   display: flex;
   position: relative;
   margin-bottom: 100px;
 
   @media (max-width: 1100px) {
     flex-direction: column-reverse;
+  }
+
+  @media (max-width: 769px) {
+    &:after {
+      background: url(${mountain});
+      content: "";
+      padding: 1px;
+      background-size: cover;
+      height: 300px;
+      width: 100%;
+      position: absolute;
+      right: -20px;
+      opacity: 0.08;
+      background-position: right;
+      bottom: -280px;
+      background-repeat: no-repeat;
+    }
   }
 `;
 
