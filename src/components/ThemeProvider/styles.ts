@@ -25,6 +25,11 @@ export const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     word-break: break-word;
   }
+  
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+  }
 
   body {
     -webkit-font-smoothing: antialiased !important;

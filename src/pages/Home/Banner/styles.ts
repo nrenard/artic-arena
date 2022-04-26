@@ -7,6 +7,7 @@ import dashedsLine from "assets/dasheds-line.svg";
 import arrowDown from "assets/arrow-down.svg";
 
 export const Container = styled.div`
+  min-height: calc(100vh - 94px);
   position: relative;
   background: radial-gradient(
     50.43% 50.43% at 49.78% 49.57%,
@@ -16,16 +17,17 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 40px 0 0;
 
   > div {
-    position: relative;
-    z-index: 1;
-    padding: 0 20px;
-
-    ${simpleFlex()}
+    ${simpleFlex('space-between')}
     flex-direction: column;
   }
+`;
+
+export const WrapperBannerContent = styled.div`
+  padding: 40px 20px 0;
+  position: relative;
+  z-index: 1;
 `;
 
 export const TextPrincipal = styled.h1`
@@ -112,17 +114,20 @@ export const MountainImage = styled.img`
   bottom: 0;
 `;
 
-export const StartButton = styled.div`
+export const StartButton = styled.a`
   font-family: "Anthu";
   font-size: 20px;
   line-height: 32px;
   letter-spacing: 3px;
   font-weight: 400;
   cursor: pointer;
-  ${simpleFlex()};
   color: var(--white);
   flex-direction: column;
   margin-top: 35px;
+  transform: translate(0, 50px);
+  ${simpleFlex('space-between')};
+  z-index: 1;
+  position: relative;
 
   &::before {
     content: "";

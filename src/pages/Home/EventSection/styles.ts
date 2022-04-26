@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { simpleFlex } from "theme/mixins";
 
 export const Container = styled.div`
-  margin-top: 100px;
+  margin-top: 180px;
   display: flex;
   position: relative;
   margin-bottom: 100px;

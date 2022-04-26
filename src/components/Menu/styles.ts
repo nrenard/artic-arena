@@ -82,24 +82,3 @@ export const MenuContainer = styled.div`
     }
   }
 `;
-
-export const SocialContainer = styled.div`
-  a {
-    margin-right: 15px;
-
-    &:last-child {
-      margin-right: 0px;
-    }
-
-    & {
-      @media (min-width: 1000px) {
-        margin-right: 25px;
-
-        &:last-child {
-          margin-right: 0px;
-        }
-      }
-    }
-    cursor: pointer;
-  }
-`;

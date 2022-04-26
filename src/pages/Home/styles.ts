@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { simpleFlex } from "theme/mixins";
+
+import { container, simpleFlex } from "theme/mixins";
 
 export const Container = styled.div`
   ${simpleFlex("center")};
@@ -12,7 +13,6 @@ export const Container = styled.div`
 
 export const SectionsContainer = styled.div`
   ${simpleFlex("center")}
-  width: 90%;
-  max-width: 1280px;
+  ${container};
   flex-direction: column;
 `;

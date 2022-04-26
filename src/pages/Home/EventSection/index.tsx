@@ -15,7 +15,7 @@ import {
 
 const EventSection: React.FC = () => {
   return (
-    <Container>
+    <Container id="section">
       <SectionTitleContainer>
         <SectionTitle>EVENT</SectionTitle>
       </SectionTitleContainer>
