@@ -21,7 +21,7 @@ const SpondorsLogo: React.FC = () => {
         <img src={fakeLogo} alt="Fake Logo" />
       </div>
 
-      <Button>GET INVOLVED</Button>
+      <Button>GET INVOLVED (Coming Soon)</Button>
     </Container>
   );
 }

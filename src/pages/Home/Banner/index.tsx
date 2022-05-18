@@ -29,7 +29,7 @@ const Banner: React.FC = () => {
           </TextSecond>
         </WrapperBannerContent>
 
-        <StartButton href="#section">START</StartButton>
+        <StartButton href="#section">Tell me more!</StartButton>
       </div>
 
       {/* <MountainImage src={mountain} alt="mountain" /> */}

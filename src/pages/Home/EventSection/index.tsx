@@ -29,14 +29,13 @@ const EventSection: React.FC = () => {
         />
       </ContainerImage>
       <EventRight>
-        <h3>TITLE</h3>
+        <h3>A gaming event unlike any other</h3>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
+          With the sun 24 hours below the horizon and the Aurora Borealis dancing across the sky, experience the extreme.
+          <br />
+          Are you ready to unleash your talents at the largest gaming event in the Arctic?
         </p>
-        <Button>READ MORE</Button>
+        <Button>TELL ME MORE!</Button>
       </EventRight>
       <SectionTitleMobile>EVENT</SectionTitleMobile>
     </Container>

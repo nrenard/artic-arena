@@ -18,13 +18,13 @@ const Bottom: React.FC = () => {
         <SocialMenu />
       </WrapperBottomMenu>
 
-      <WrapperSponsors>
+      {/* <WrapperSponsors>
         <img src={fakeLogo} alt="Fake Logo" />
         <img src={fakeLogo} alt="Fake Logo" />
         <img src={fakeLogo} alt="Fake Logo" />
         <img src={fakeLogo} alt="Fake Logo" />
         <img src={fakeLogo} alt="Fake Logo" />
-      </WrapperSponsors>
+      </WrapperSponsors> */}
 
       <span style={{ color: "white" }}>© 2021 Arctic Arena</span>
     </Container>

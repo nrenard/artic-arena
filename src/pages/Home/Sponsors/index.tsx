@@ -11,22 +11,24 @@ import {
   SectionTitleContainer,
   SectionTitleMobile,
 } from "./styles";
+import Button from "components/Button";
 
 const SponsorsSection: React.FC = () => {
   return (
     <Container>
-      <SectionTitleMobile>SPONDORS</SectionTitleMobile>
+      <SectionTitleMobile>VENUE</SectionTitleMobile>
       <SectionTitleContainer>
-        <SectionTitle>SPONDORS</SectionTitle>
+        <SectionTitle>VENUE</SectionTitle>
       </SectionTitleContainer>
       <EventLeft>
-        <h3>TITLE</h3>
+        <h3>Svalbard, the Nordic Arctic</h3>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
+          In November, Svalbard experiences polar nights — total darkness with eerie, blueish-purple skies.
+          <br />
+          Couple that with the fastest internet speed on planet Earth, what you get is a gaming festival of epic proportions.
         </p>
+
+        <Button>TAKE ME TO SVALBARD</Button>
       </EventLeft>
       <ContainerImage>
         <ImageWithCustomBorder

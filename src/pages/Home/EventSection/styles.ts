@@ -48,18 +48,18 @@ export const SectionTitleMobile = styled.div`
 
 export const EventRight = styled.div`
   margin-left: 62px;
+  flex: 1;
 
   @media (max-width: 1100px) {
     margin-left: 0px;
     margin-bottom: 45px;
   }
 
-  flex: 1;
   h3 {
     font-family: "Anthu";
     font-weight: 400;
     font-size: 40px;
-    line-height: 64px;
+    line-height: 45px;
     letter-spacing: 2px;
     background: linear-gradient(
       to right,
@@ -70,6 +70,7 @@ export const EventRight = styled.div`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 65px;
+    margin-bottom: 15px;
   }
 
   @media (max-width: 1100px) {
