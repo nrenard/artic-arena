@@ -1,15 +1,15 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 import bmenu from "assets/bmenu.png";
 import { simpleFlex } from "theme/mixins";
 
 export const Wrapper = styled.div`
-  ${simpleFlex('center')}
+  ${simpleFlex("center")}
   padding: 8px 0px;
 `;
 
 export const Container = styled.div`
-  ${simpleFlex('space-between')}
+  ${simpleFlex("space-between")}
   flex: 1;
   max-width: 1280px;
 
@@ -58,14 +58,31 @@ export const LogoContainer = styled.div`
   }
 `;
 
-export const MenuContainer = styled.div`
+export const MenuContainer = styled.div<{ menuIsOpen: boolean }>`
   margin-left: 80px;
 
-  @media (max-width: 1000px) {
-    display: none;
-  }
-
   z-index: 1;
+
+  @media (max-width: 1000px) {
+    position: absolute;
+    background: ${({ theme }) => theme.colors.mediumPurple};
+    margin: 0;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    z-index: 9;
+    padding: 50px 0px 0px 40px;
+    transition: 0.4s ease all;
+
+    ${({ menuIsOpen }) =>
+      menuIsOpen
+        ? css`
+            left: 0;
+          `
+        : css`
+            left: -1000px;
+          `}
+  }
 
   a {
     color: var(--white);
@@ -75,10 +92,76 @@ export const MenuContainer = styled.div`
     cursor: pointer;
     margin-right: 25px;
 
+    img {
+      margin-left: 10px;
+    }
+
+    &.active {
+      background: linear-gradient(
+        to right,
+        var(--yellow-500),
+        var(--yellow-500),
+        var(--pink-500)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position: relative;
+
+      img {
+        display: none;
+      }
+
+      &:after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background: linear-gradient(
+          to right,
+          var(--yellow-500),
+          var(--yellow-500),
+          var(--pink-500)
+        );
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+      }
+    }
+
     & {
       @media (min-width: 1100px) {
         margin-right: 45px;
       }
     }
   }
+`;
+
+export const BarMenuContainer = styled.div`
+  @media (min-width: 1000px) {
+    display: none;
+  }
+
+  cursor: pointer;
+  position: absolute;
+  left: 25px;
+`;
+
+export const CloseMenuMobile = styled.div`
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+
+  @media (min-width: 1000px) {
+    display: none;
+  }
+`;
+
+export const OverFlow = styled.div`
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  right: 0;
+  top: 0;
+  z-index: 8;
+  background-color: #00000057;
 `;

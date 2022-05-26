@@ -19,6 +19,7 @@ const Theme: DefaultTheme = {
     bg: "#13032A",
     yellow: "#FFD260",
     purple: "#E01974",
+    mediumPurple: "#200C3E",
   },
   gradientText: css`
     background: -webkit-linear-gradient(

@@ -6,6 +6,7 @@ declare module "styled-components" {
       bg: string;
       yellow: string;
       purple: string;
+      mediumPurple: string;
     };
     gradientText: FlattenSimpleInterpolation;
     typography: {
