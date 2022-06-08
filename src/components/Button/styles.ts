@@ -17,4 +17,15 @@ export const Container = styled.button`
   display: flex;
   align-items: center;
   cursor: pointer;
+
+  a {
+    font-family: "Anthu";
+    color: #fff;
+    font-size: 18px;
+    line-height: 28.8px;
+    font-weight: 400;
+    border: 0px;
+    background: none;
+    letter-spacing: 3px;
+  }
 `;
