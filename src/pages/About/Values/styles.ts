@@ -8,16 +8,7 @@ export const Container = styled.div`
   }
   display: flex;
   position: relative;
-  margin-bottom: 200px;
-
-  @media (max-width: 1100px) {
-    flex-direction: column-reverse;
-  }
-`;
-
-export const WrappVenue = styled.div`
-  ${simpleFlex("center")}
-  flex: 1;
+  margin-bottom: 100px;
 
   @media (max-width: 1100px) {
     flex-direction: column-reverse;
@@ -36,15 +27,28 @@ export const SectionTitleMobile = styled.div`
   }
 `;
 
-export const EventRight = styled.div`
-  margin-left: 62px;
+export const ContainerValues = styled.div`
+  ${simpleFlex("center")}
   flex: 1;
+`;
 
-  @media (max-width: 1100px) {
-    margin-left: 0px;
-    margin-bottom: 45px;
+export const WrappValue = styled.div`
+  ${simpleFlex("center")}
+
+  @media (min-width: 769px) {
+    margin-left: 140px;
   }
 
+  @media (max-width: 769px) {
+    flex-direction: column;
+
+    h3:first-child {
+      margin-top: 25px;
+    }
+  }
+`;
+
+export const Value = styled.div`
   h3 {
     font-family: "Anthu";
     font-weight: 400;
@@ -59,14 +63,7 @@ export const EventRight = styled.div`
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-top: 65px;
     margin-bottom: 15px;
-  }
-
-  @media (max-width: 1100px) {
-    h3 {
-      margin-top: 45px;
-    }
   }
 
   p {
@@ -75,6 +72,14 @@ export const EventRight = styled.div`
     line-height: 24.22px;
     font-weight: 400;
     color: var(--white);
+  }
+
+  @media (min-width: 769px) {
+    margin-right: 22px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
   }
 `;
 
@@ -85,14 +90,4 @@ export const SectionTitleContainer = styled.div`
   @media (max-width: 1100px) {
     display: none;
   }
-`;
-
-export const ContainerImage = styled.div`
-  ${simpleFlex("center")}
-
-  @media (max-width: 1100px) {
-    margin-left: 0px;
-  }
-
-  flex: 1;
 `;

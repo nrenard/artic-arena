@@ -13,7 +13,7 @@ export const ContainerNav = styled.div`
 
 export const TabNav = styled.div`
   margin-bottom: 20px;
-  min-width: 600px;
+  min-width: 500px;
   display: flex;
   align-items: center;
 
@@ -34,6 +34,10 @@ export const NavActive = styled.a<{ active: boolean }>`
     }
 
     margin-right: 55px;
+
+    @media (max-width: 769px) {
+      margin-right: 20px;
+    }
 
     &:last-child {
       margin-right: 0;
@@ -60,7 +64,7 @@ export const NavActive = styled.a<{ active: boolean }>`
       &:after {
         content: "";
         width: 50%;
-        height: 1px;
+        height: 2px;
         background: linear-gradient(
           to right,
           var(--yellow-500),
@@ -74,4 +78,7 @@ export const NavActive = styled.a<{ active: boolean }>`
     `}
 `;
 
-export const TabComponent = styled.div``;
+export const TabComponent = styled.div`
+  flex: 1;
+  width: 100%;
+`;

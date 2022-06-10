@@ -9,7 +9,10 @@ export const Container = styled.div`
 
   display: flex;
   position: relative;
-  margin-bottom: 100px;
+
+  @media (min-width: 769px) {
+    margin-bottom: 60px;
+  }
 
   @media (max-width: 1100px) {
     flex-direction: column;
@@ -68,12 +71,6 @@ export const EventLeft = styled.div`
     color: var(--white);
   }
 
-  @media (min-width: 1400px) {
-    p {
-      margin-right: 164px;
-    }
-  }
-
   margin-left: 100px;
 
   @media (max-width: 1100px) {
@@ -94,6 +91,14 @@ export const ContainerImage = styled.div`
   ${simpleFlex("center")}
   position: relative;
 
+  @media (max-width: 769px) {
+    flex-direction: column;
+
+    > div {
+      margin-bottom: 25px;
+    }
+  }
+
   @media (min-width: 769px) {
     > div:first-child {
       margin-right: -200px;
@@ -101,4 +106,28 @@ export const ContainerImage = styled.div`
       z-index: 1;
     }
   }
+`;
+
+export const ContainerBottomImages = styled.div`
+  ${simpleFlex("center")}
+
+  @media (max-width: 769px) {
+    flex-direction: column;
+
+    img {
+      margin-bottom: 35px;
+    }
+  }
+
+  @media (min-width: 769px) {
+    img {
+      margin-right: 15px;
+
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+
+  margin-bottom: 50px;
 `;

@@ -1,28 +1,74 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Banner from "./Banner";
 import TabsAbout from "./TabsAbout";
 import ArcticArena from "./ArcticArena";
 import Venue from "./Venue";
+import Values from "./Values";
+import Influences from "./Influences";
 
-import { Container, SectionsContainer } from "./styles";
+import discord from "assets/Discord_iconbig.png";
+import twitter from "assets/Twitter_iconbig.png";
+import twitch from "assets/Twitch_iconbig.png";
+import youtube from "assets/Youtube_iconbig.png";
+import facebook from "assets/Facebook_iconbig.png";
+import instagram from "assets/Instagram_iconbig.png";
+import snapchat from "assets/Snapchat_iconbig.png";
+import email from "assets/Email_iconbig.png";
+import tiktok from "assets/Tiktok_iconbig.png";
+
+import { Container, SectionsContainer, SocialLinks } from "./styles";
 
 const About: React.FC = () => {
+  const [currentTab, setCurrentTab] = useState(0);
+
   return (
     <>
       <Banner />
 
-      <Container>
+      <Container bgActive={currentTab}>
         <SectionsContainer>
           <TabsAbout
+            currentTab={currentTab}
+            setCurrentTab={setCurrentTab}
             tabs={[
               { component: <ArcticArena />, name: "ARCTIC ARENA" },
-              { component: <p>oi3</p>, name: "INFLUENCES" },
-              { component: <Venue />, name: "SVALBARD" },
-              { component: <p>oi4</p>, name: "VALUES" },
+              { component: <Influences />, name: "INFLUENCES" },
+              { component: <Venue />, name: "VENUE" },
+              { component: <Values />, name: "VALUES" },
             ]}
           />
         </SectionsContainer>
+
+        <SocialLinks>
+          <a href="#">
+            <img src={twitch} alt="twitter" />
+          </a>
+          <a href="#">
+            <img src={discord} alt="discord" />
+          </a>
+          <a href="#">
+            <img src={twitter} alt="twitter" />
+          </a>
+          <a href="#">
+            <img src={youtube} alt="youtube" />
+          </a>
+          <a href="#">
+            <img src={facebook} alt="facebook" />
+          </a>
+          <a href="#">
+            <img src={instagram} alt="instagram" />
+          </a>
+          <a href="#" className="desk">
+            <img src={snapchat} alt="snapshat" />
+          </a>
+          <a href="#" className="desk">
+            <img src={tiktok} alt="tiktok" />
+          </a>
+          <a href="#" className="desk">
+            <img src={email} alt="email" />
+          </a>
+        </SocialLinks>
       </Container>
     </>
   );

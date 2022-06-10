@@ -9,6 +9,7 @@ import {
   EventRight,
   SectionTitleContainer,
   SectionTitleMobile,
+  WrappVenue,
 } from "./styles";
 
 const ArcticArena: React.FC = () => {
@@ -17,19 +18,21 @@ const ArcticArena: React.FC = () => {
       <SectionTitleContainer>
         <SectionTitle>ARCTIC ARENA</SectionTitle>
       </SectionTitleContainer>
-      <ContainerImage>
-        <img src={bgEvent} alt="Arctic arena" />
-      </ContainerImage>
-      <EventRight>
-        <h3>What is Arctic Arena?</h3>
-        <p>
-          Only the biggest and best gaming events company in the Arctic!
-          <br />
-          Located in Svalbard, Arctic Arena hosts the ultimate Nordic gaming
-          event every November, when the Arctic sky is pitch black, illuminated
-          only by the polar lights.
-        </p>
-      </EventRight>
+      <WrappVenue>
+        <ContainerImage>
+          <img src={bgEvent} alt="Arctic arena" />
+        </ContainerImage>
+        <EventRight>
+          <h3>What is Arctic Arena?</h3>
+          <p>
+            Only the biggest and best gaming events company in the Arctic!
+            <br />
+            Located in Svalbard, Arctic Arena hosts the ultimate Nordic gaming
+            event every November, when the Arctic sky is pitch black,
+            illuminated only by the polar lights.
+          </p>
+        </EventRight>
+      </WrappVenue>
       <SectionTitleMobile>ARCTIC ARENA</SectionTitleMobile>
     </Container>
   );

@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { container, simpleFlex } from 'theme/mixins';
+import { container, simpleFlex } from "theme/mixins";
 
 export const Container = styled.div`
   span {
@@ -14,7 +14,7 @@ export const Container = styled.div`
 
 export const FirstLine = styled.div`
   display: block;
-  background-image: linear-gradient(to bottom, #FFD260 46.21%, #E01974 97.61%);
+  background-image: linear-gradient(to bottom, #ffd260 46.21%, #e01974 97.61%);
   height: 1px;
   width: 60vw;
 `;
@@ -22,7 +22,7 @@ export const FirstLine = styled.div`
 export const SecondLine = styled.div`
   display: block;
   margin-top: 10px;
-  background-image: linear-gradient(to bottom, #FFD260 46.21%, #E01974 97.61%);
+  background-image: linear-gradient(to bottom, #ffd260 46.21%, #e01974 97.61%);
   height: 1px;
   width: 90vw;
   margin-left: auto;
@@ -34,18 +34,18 @@ export const SecondLine = styled.div`
 `;
 
 export const WrapperBottomMenu = styled.div`
-  ${simpleFlex('center')};
+  ${simpleFlex("center")};
   ${container};
   margin: 30px auto;
 
   @media (min-width: 990px) {
-    ${simpleFlex('flex-end')};
+    ${simpleFlex("flex-end")};
     margin: 0 auto 70px;
   }
 `;
 
 export const WrapperSponsors = styled.div`
-  ${simpleFlex('center')};
+  ${simpleFlex("center")};
   ${container};
   margin: 0 auto 50px;
   flex-wrap: wrap;
@@ -63,4 +63,4 @@ export const LogoMobile = styled.img`
   @media (min-width: 768px) {
     display: none;
   }
-`
+`;

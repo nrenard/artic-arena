@@ -1,17 +1,17 @@
-import React, { ReactNode, useState } from "react";
+import React, { ReactNode } from "react";
 
 import { ContainerNav, TabComponent, TabNav, NavActive } from "./styles";
 
 interface IProps {
+  currentTab: number;
+  setCurrentTab(currentTab: number): void;
   tabs: {
     component: ReactNode;
     name: string;
   }[];
 }
 
-const TabsAbout: React.FC<IProps> = ({ tabs }) => {
-  const [currentTab, setCurrentTab] = useState(0);
-
+const TabsAbout: React.FC<IProps> = ({ tabs, currentTab, setCurrentTab }) => {
   const tabActive = tabs[currentTab];
 
   return (
