@@ -20,7 +20,7 @@ const Influences: React.FC = () => {
   return (
     <Container id="section">
       <SectionTitleContainer>
-        <SectionTitle>INFLUENCES</SectionTitle>
+        <SectionTitle>INFLUENCERS</SectionTitle>
       </SectionTitleContainer>
       <InfluecesContainer>
         <InfluencesWrapp>
@@ -68,7 +68,7 @@ const Influences: React.FC = () => {
           </Influence>
         </InfluencesWrapp>
       </InfluecesContainer>
-      <SectionTitleMobile>INFLUENCES</SectionTitleMobile>
+      <SectionTitleMobile>INFLUENCERS</SectionTitleMobile>
     </Container>
   );
 };
