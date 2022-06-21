@@ -29,16 +29,25 @@ const Venue: React.FC = () => {
         <EventLeft>
           <h3>Where’s AA happening?</h3>
           <p>
-            Venue Where’s AA happening? In Svalbard, an archipelago with the
-            fastest internet speeds in the Arctic and the most northerly 5G
-            networks.
+            In Longyearbyen, the world’s northernmost urban community.
+            <br />
+            <br />
+            Longyearbyen is in Spitsbergen, the largest island of Svalbard, a
+            Norwegian archipelago full of deserts and glaciers
+            <br />
+            <br />
+            60% of Svalbard is covered in ice, making it ideal for the “The
+            Doomsday vault” — the global reserve for our world’s seeds,
+            representing 13,000 years of agricultural history.
+            <br />
             <br />
             Added bonus: Svalbard’s a visa-free zone. Anyone can come and live
             here.
             <br />
+            <br />
             P.S. It's one of the northernmost settlements on planet Earth with
             rugged Arctic landscapes and fascinating wildlife — polar bears,
-            reindeers, Arctic foxes. Get a taste of Svalbard (Link)
+            reindeers, Arctic foxes, and Narwhals aka the unicorn of the sea.
           </p>
 
           <Button>

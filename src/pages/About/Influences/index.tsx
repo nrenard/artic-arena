@@ -14,6 +14,7 @@ import {
   InfluecesContainer,
   InfluencesWrapp,
 } from "./styles";
+import Button from "components/Button";
 
 const Influences: React.FC = () => {
   return (
@@ -41,6 +42,7 @@ const Influences: React.FC = () => {
                 In Norway, she’s a parsley — she fits in everywhere and is liked
                 by everyone.
               </p>
+              <Button>Hei Lexi</Button>
             </div>
           </Influence>
           <Influence>
@@ -61,6 +63,7 @@ const Influences: React.FC = () => {
                 In Norway, she’s akin to a potato — can be used anywhere, at any
                 time, for anything.
               </p>
+              <Button>Hei Liv</Button>
             </div>
           </Influence>
         </InfluencesWrapp>

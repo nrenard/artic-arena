@@ -16,8 +16,8 @@ const Home: React.FC = () => {
         <EventSection />
 
         <Sponsors />
-        
-        <SpondorsLogo />
+
+        {/* <SpondorsLogo /> */}
       </SectionsContainer>
     </Container>
   );

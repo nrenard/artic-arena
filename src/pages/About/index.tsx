@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 import Banner from "./Banner";
 import TabsAbout from "./TabsAbout";
@@ -21,13 +22,24 @@ import { Container, SectionsContainer, SocialLinks } from "./styles";
 
 const About: React.FC = () => {
   const [currentTab, setCurrentTab] = useState(0);
+  const myRef = useRef<any>(null);
+  const venueParams = useLocation().search;
+
+  const executeScroll = () => myRef.current && myRef.current.scrollIntoView();
+
+  useEffect(() => {
+    if (venueParams.includes("venue")) {
+      executeScroll();
+      setCurrentTab(2);
+    }
+  }, []);
 
   return (
     <>
       <Banner />
 
       <Container bgActive={currentTab}>
-        <SectionsContainer>
+        <SectionsContainer ref={myRef}>
           <TabsAbout
             currentTab={currentTab}
             setCurrentTab={setCurrentTab}

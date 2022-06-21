@@ -28,12 +28,14 @@ export const SectionTitleMobile = styled.div`
 `;
 
 export const ContainerValues = styled.div`
-  ${simpleFlex("center")}
+  display: flex;
+  justify-content: center;
   flex: 1;
 `;
 
 export const WrappValue = styled.div`
-  ${simpleFlex("center")}
+  display: flex;
+  justify-content: center;
 
   @media (min-width: 769px) {
     margin-left: 140px;

@@ -16,7 +16,8 @@ export const Container = styled.div`
 `;
 
 export const WrappVenue = styled.div`
-  ${simpleFlex("center")}
+  /* ${simpleFlex("center")} */
+  display: flex;
   flex: 1;
 
   @media (max-width: 1100px) {
@@ -59,7 +60,6 @@ export const EventRight = styled.div`
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-top: 65px;
     margin-bottom: 15px;
   }
 
@@ -88,7 +88,9 @@ export const SectionTitleContainer = styled.div`
 `;
 
 export const ContainerImage = styled.div`
-  ${simpleFlex("center")}
+  display: flex;
+  align-items: start;
+  justify-content: center;
 
   @media (max-width: 1100px) {
     margin-left: 0px;

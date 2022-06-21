@@ -29,11 +29,20 @@ const EventSection: React.FC = () => {
         />
       </ContainerImage>
       <EventRight>
-        <h3>A gaming event unlike any other</h3>
+        <h3>The world’s northernmost gaming event</h3>
         <p>
-          With the sun 24 hours below the horizon and the Aurora Borealis dancing across the sky, experience the extreme.
+          With the sun 24 hours below the horizon and the Aurora Borealis
+          dancing across the sky, experience the extreme.
           <br />
-          Are you ready to unleash your talents at the largest gaming event in the Arctic?
+          The only event in the world where you can play all over town at
+          different venues... An Arctic Arena.
+          <br />
+          Meet players from all over the world and engage with your favourite
+          games in different mediums — consoles, LAN, VR, augmented reality,
+          cards, and much more.
+          <br />
+          Compete with the world’s best gamers and experience authentic
+          Scandinavia as you play all over town, 24/7.
         </p>
         <Button>TELL ME MORE!</Button>
       </EventRight>

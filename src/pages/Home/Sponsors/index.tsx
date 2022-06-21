@@ -12,6 +12,7 @@ import {
   SectionTitleMobile,
 } from "./styles";
 import Button from "components/Button";
+import { Link } from "react-router-dom";
 
 const SponsorsSection: React.FC = () => {
   return (
@@ -23,12 +24,23 @@ const SponsorsSection: React.FC = () => {
       <EventLeft>
         <h3>Svalbard, the Nordic Arctic</h3>
         <p>
-          In November, Svalbard experiences polar nights — total darkness with eerie, blueish-purple skies.
+          In November, Svalbard experiences polar nights — total darkness with
+          eerie, blueish-purple skies.
           <br />
-          Couple that with the fastest internet speed on planet Earth, what you get is a gaming festival of epic proportions.
+          Except of course for the splendiferous Aurora Borealis — wave-like
+          lights dancing across the sky, varying in colours from dark blues and
+          greens to reds and orange.
+          <br />
+          Oh, we’re the testing pilot for 5G, so naturally you can expect 5G in
+          all of Longyearbyen.
+          <br />
+          Dark skies + dancing lights + super fast 5G = A gaming festival of
+          epic proportions
         </p>
 
-        <Button>TAKE ME TO SVALBARD</Button>
+        <Link to="/about?venue=1">
+          <Button>TAKE ME TO SVALBARD</Button>
+        </Link>
       </EventLeft>
       <ContainerImage>
         <ImageWithCustomBorder

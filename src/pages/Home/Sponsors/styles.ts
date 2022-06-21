@@ -51,7 +51,6 @@ export const EventLeft = styled.div`
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-top: 65px;
     margin-bottom: 15px;
   }
 
