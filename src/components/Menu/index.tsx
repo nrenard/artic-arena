@@ -23,7 +23,7 @@ const Menu: React.FC = () => {
   const [menuMobileOpen, setMenuMobileOpen] = useState(false);
 
   return (
-    <Wrapper>
+    <Wrapper id="header">
       <Container>
         <LeftContent>
           <BarMenuContainer onClick={() => setMenuMobileOpen(true)}>

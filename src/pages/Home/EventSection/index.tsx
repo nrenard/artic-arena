@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 
-import bgEvent from "assets/imgHome1.png";
 import ImageWithCustomBorder from "components/ImageWithCustomBorder";
 import SectionTitle from "components/SectionTitle";
 import Button from "components/Button";
+
+import bgEvent from "assets/imgHome1.png";
 
 import {
   Container,
@@ -44,7 +46,9 @@ const EventSection: React.FC = () => {
           Compete with the world’s best gamers and experience authentic
           Scandinavia as you play all over town, 24/7.
         </p>
-        <Button>TELL ME MORE!</Button>
+        <Button>
+          <Link to={'/about'}>TELL ME MORE!</Link>
+        </Button>
       </EventRight>
       <SectionTitleMobile>EVENT</SectionTitleMobile>
     </Container>

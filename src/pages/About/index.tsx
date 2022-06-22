@@ -25,6 +25,8 @@ const About: React.FC = () => {
   const myRef = useRef<any>(null);
   const venueParams = useLocation().search;
 
+  useEffect(() => window.scrollTo(0, 0), [])
+
   const executeScroll = () => myRef.current && myRef.current.scrollIntoView();
 
   useEffect(() => {
