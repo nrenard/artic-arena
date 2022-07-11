@@ -27,27 +27,29 @@ const Venue: React.FC = () => {
           <SectionTitle>VENUE</SectionTitle>
         </SectionTitleContainer>
         <EventLeft>
-          <h3>Where’s AA happening?</h3>
+          <h3>Where’s ARA happening?</h3>
           <p>
-            In Longyearbyen, the world’s northernmost urban community.
+            In Longyearbyen, the world’s northernmost city with all amenities of
+            a modern town, including hotels, and restaurants. Most importantly:
+            the fastest internet in the world. Longyearbyen is futuristic and
+            traditional, where the old meets the new and nature meets
+            technology.
             <br />
             <br />
-            Longyearbyen is in Spitsbergen, the largest island of Svalbard, a
-            Norwegian archipelago full of deserts and glaciers
+            It is located in Spitsbergen, the largest island of the Svalbard
+            archipelago with rugged Arctic landscapes and fascinating wildlife —
+            polar bears, reindeers, arctic foxes, and Narwhals aka the unicorn
+            of the sea.
             <br />
             <br />
-            60% of Svalbard is covered in ice, making it ideal for the “The
-            Doomsday vault” — the global reserve for our world’s seeds,
-            representing 13,000 years of agricultural history.
+            Arctic Arena will happen across all of Longyearbyen in locations
+            chosen to accommodate each part of the event in a dynamic way. So,
+            people can enjoy gaming and sightseeing throughout all venues (and
+            the whole town).
             <br />
             <br />
-            Added bonus: Svalbard’s a visa-free zone. Anyone can come and live
-            here.
-            <br />
-            <br />
-            P.S. It's one of the northernmost settlements on planet Earth with
-            rugged Arctic landscapes and fascinating wildlife — polar bears,
-            reindeers, Arctic foxes, and Narwhals aka the unicorn of the sea.
+            Added bonus: Svalbard’s a visa-free zone. Anyone can come here and
+            have a good time.
           </p>
 
           <Button>

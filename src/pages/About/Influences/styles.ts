@@ -40,7 +40,11 @@ export const InfluecesContainer = styled.div`
 `;
 
 export const InfluencesWrapp = styled.div`
-  ${simpleFlex("center")}
+  @media (min-width: 770px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px 15px;
+  }
 
   @media (max-width: 769px) {
     flex-direction: column;
@@ -49,22 +53,22 @@ export const InfluencesWrapp = styled.div`
 
 export const Influence = styled.div`
   position: relative;
+  flex: 1;
+  margin-bottom: 10px;
+
+  > div {
+    margin-left: 10px;
+  }
+
+  img {
+    height: 230px;
+  }
+
   @media (max-width: 769px) {
     background: url(${influencesBg});
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 0px 5px;
-
-    .desk {
-      display: none;
-    }
-
-    .mobile {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px 0px;
-    }
   }
 
   @media (min-width: 769px) {
@@ -85,14 +89,10 @@ export const Influence = styled.div`
     ${simpleFlex("center")}
   }
 
-  > div {
-    margin-left: 10px;
-  }
-
   h3 {
     font-family: "FugazOne";
     font-weight: 400;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 45px;
     letter-spacing: 2px;
     background: linear-gradient(
@@ -118,8 +118,6 @@ export const Influence = styled.div`
   }
 
   @media (min-width: 769px) {
-    margin-right: 20px;
-
     padding: 10px;
 
     &:last-child {
