@@ -50,6 +50,13 @@ export const EventRight = styled.div`
   margin-left: 62px;
   flex: 1;
 
+    
+  @media (min-width: 1100px) {
+    h3 {
+      width: 480px;
+    }
+  }
+
   @media (max-width: 1100px) {
     margin-left: 0px;
     margin-bottom: 45px;
