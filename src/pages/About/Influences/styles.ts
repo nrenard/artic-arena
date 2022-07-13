@@ -1,8 +1,10 @@
 import styled from "styled-components";
+
+import { simpleFlex } from "theme/mixins";
+
 import influenceBg from "assets/influenceBg.png";
 import influencesBg from "assets/influencesBg.png";
 import pointsAbout1 from "assets/pointsAbout1.png";
-import { simpleFlex } from "theme/mixins";
 
 export const Container = styled.div`
   margin-top: 120px;
@@ -15,6 +17,16 @@ export const Container = styled.div`
 
   @media (max-width: 1100px) {
     flex-direction: column-reverse;
+  }
+
+  .rainbow-text {
+    background: linear-gradient(
+      to right,
+      var(--yellow-500),
+      var(--pink-500)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 `;
 
@@ -66,9 +78,16 @@ export const Influence = styled.div`
 
   @media (max-width: 769px) {
     background: url(${influencesBg});
-    background-size: contain;
+    background-size: 100% 98%;
     background-repeat: no-repeat;
     background-position: 0px 5px;
+    height: fit-content;
+    flex-direction: column;
+
+    > div {
+      margin-left: 0;
+      padding: 5px 10px 15px;
+    }
   }
 
   @media (min-width: 769px) {
@@ -79,10 +98,6 @@ export const Influence = styled.div`
     .mobile {
       display: none;
     }
-  }
-
-  @media (max-width: 769px) {
-    flex-direction: column;
   }
 
   @media (min-width: 769px) {
@@ -103,14 +118,25 @@ export const Influence = styled.div`
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media (max-width: 769px) {
+      font-size: 24px;
+    }
   }
 
   p {
     font-size: 14px;
-    margin-bottom: 25px;
     line-height: 24.22px;
     font-weight: 400;
     color: var(--white);
+
+    &:nth-child(3) {
+      margin-bottom: 25px;
+
+      @media (max-width: 769px) {
+        margin-bottom: 5px;
+      }
+    }
   }
 
   @media (max-width: 769px) {

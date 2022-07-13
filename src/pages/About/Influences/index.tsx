@@ -24,14 +24,15 @@ const Influences: React.FC = () => {
   return (
     <Container id="section">
       <SectionTitleContainer>
-        <SectionTitle>INFLUENCERS</SectionTitle>
+        <SectionTitle>Organisers</SectionTitle>
       </SectionTitleContainer>
       <InfluecesContainer>
         <InfluencesWrapp>
           <Influence>
             <img src={olle} alt="influence2" className="desk" />
             <div>
-              <h3>OLLE (THEY/THEM)</h3>
+              <h3>OLLE</h3>
+              <p className="rainbow-text">(THEY/THEM)</p>
               <p>CEO and Co-Founder</p>
               <p>
                 Meet the world’s most organised Swede. The creative, big picture
@@ -44,7 +45,8 @@ const Influences: React.FC = () => {
           <Influence>
             <img src={lexi} alt="influence1" className="desk" />
             <div>
-              <h3>LEXI (SHE/HER)</h3>
+              <h3>LEXI</h3>
+              <p className="rainbow-text">(SHE/HER)</p>
               <p>CFO and Co-Founder</p>
               <p>
                 Meet the world’s most creative numbers person. This Brit is a
@@ -57,7 +59,8 @@ const Influences: React.FC = () => {
           <Influence>
             <img src={kat} alt="influence4" className="desk" />
             <div>
-              <h3>KAT (SHE/HER)</h3>
+              <h3>KAT</h3>
+              <p className="rainbow-text">(SHE/HER)</p>
               <p>Administrative Assistant</p>
               <p>
                 My name is Katrine, Kat for short, and I'm from a town to the
@@ -72,7 +75,8 @@ const Influences: React.FC = () => {
           <Influence>
             <img src={loggan} alt="influence3" className="desk" />
             <div>
-              <h3>LOGAN (HE/HIM)</h3>
+              <h3>LOGAN</h3>
+              <p className="rainbow-text">(HE/HIM)</p>
               <p>Creative Assistant</p>
               <p>
                 I came from Brazil to help set up the gaming scene in
@@ -86,7 +90,8 @@ const Influences: React.FC = () => {
           <Influence>
             <img src={mia} alt="influence4" className="desk" />
             <div>
-              <h3>MIA (SHE/HER)</h3>
+              <h3>MIA</h3>
+              <p className="rainbow-text">(SHE/HER)</p>
               <p>Communications</p>
               <p>
                 I live in a small Sami village called Karasjok. The things I
@@ -99,7 +104,8 @@ const Influences: React.FC = () => {
           <Influence>
             <img src={erik} alt="influence4" className="desk" />
             <div>
-              <h3>ERIK (HE/HIM)</h3>
+              <h3>ERIK </h3>
+              <p className="rainbow-text">(HE/HIM)</p>
               <p>Communications</p>
               <p>
                 I am 17 years old and live on Svalbard. My hobbies are gaming
@@ -112,7 +118,8 @@ const Influences: React.FC = () => {
           <Influence>
             <img src={tone} alt="influence4" className="desk" />
             <div>
-              <h3>TONE (SHE/HER)</h3>
+              <h3>TONE</h3>
+              <p className="rainbow-text">(SHE/HER)</p>
               <p>Event Marketing Coordinator</p>
               <p>
                 I'm from Sotra, an island on the west coast of Norway, and have
@@ -126,8 +133,9 @@ const Influences: React.FC = () => {
           <Influence>
             <img src={martin} alt="influence4" className="desk" />
             <div>
-              <h3>MARTIM (HE/HIM)</h3>
-              <p>Social engagement (Consultant) </p>
+              <h3>Martin</h3>
+              <p className="rainbow-text">(HE/HIM)</p>
+              <p>Social Engagement (Consultant) </p>
               <p>
                 Currently collaborating with Arctic Arena as a media consultant,
                 I engage with the community. I am from a northern city in Norway
@@ -139,7 +147,7 @@ const Influences: React.FC = () => {
           </Influence>
         </InfluencesWrapp>
       </InfluecesContainer>
-      <SectionTitleMobile>INFLUENCERS</SectionTitleMobile>
+      <SectionTitleMobile>Organisers</SectionTitleMobile>
     </Container>
   );
 };

@@ -67,6 +67,10 @@ export const Value = styled.div`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 15px;
+
+    @media (min-width: 769px) {
+      min-height: 90px;
+    }
   }
 
   p {

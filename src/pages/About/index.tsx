@@ -47,7 +47,7 @@ const About: React.FC = () => {
             setCurrentTab={setCurrentTab}
             tabs={[
               { component: <ArcticArena />, name: "ARCTIC ARENA" },
-              { component: <Influences />, name: "INFLUENCERS" },
+              { component: <Influences />, name: "Organisers" },
               { component: <Venue />, name: "VENUE" },
               { component: <Values />, name: "VALUES" },
             ]}
