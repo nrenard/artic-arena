@@ -27,6 +27,7 @@ const Values: React.FC = () => {
               for gamers and their support systems all over the world. After
               all, e-sports are sports!
               <br />
+              <br />
               The first aspect of this is mental health. That is a hugely
               debated topic, but action rarely follows suit. There’s a reason
               young people struggle with their mental health, but we believe
@@ -73,8 +74,10 @@ const Values: React.FC = () => {
               As our little Arctic community struggled to create new industries
               and become greener, we started a digital business — all-year-round
               economic activity that aims to have a lower impact on the
-              environment but a positive one for local workers. We are
-              concluding a study to assess how to use the most climate-friendly
+              environment but a positive one for local workers. 
+              <br />
+              <br />
+              We are concluding a study to assess how to use the most climate-friendly
               technology and offset carbon emissions where they can’t be cut. We
               are not perfect, but every product on the pipeline goes through an
               assessment, and our employees work remotely whenever possible.

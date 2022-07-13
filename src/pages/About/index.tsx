@@ -8,17 +8,7 @@ import Venue from "./Venue";
 import Values from "./Values";
 import Influences from "./Influences";
 
-import discord from "assets/Discord_iconbig.png";
-import twitter from "assets/Twitter_iconbig.png";
-import twitch from "assets/Twitch_iconbig.png";
-import youtube from "assets/Youtube_iconbig.png";
-import facebook from "assets/Facebook_iconbig.png";
-import instagram from "assets/Instagram_iconbig.png";
-import snapchat from "assets/Snapchat_iconbig.png";
-import email from "assets/Email_iconbig.png";
-import tiktok from "assets/Tiktok_iconbig.png";
-
-import { Container, SectionsContainer, SocialLinks } from "./styles";
+import { Container, SectionsContainer } from "./styles";
 
 const About: React.FC = () => {
   const [currentTab, setCurrentTab] = useState(0);
@@ -53,36 +43,6 @@ const About: React.FC = () => {
             ]}
           />
         </SectionsContainer>
-
-        <SocialLinks>
-          <a href="https://www.twitch.tv/thearcticarena" target="_blank">
-            <img src={twitch} alt="twitch" />
-          </a>
-          <a href="https://discord.gg/5PbtVQFrQF" target="_blank">
-            <img src={discord} alt="discord" />
-          </a>
-          <a href="https://www.twitter.com/arctic_arena" target="_blank">
-            <img src={twitter} alt="twitter" />
-          </a>
-          {/* <a href="https://www.twitter.com/arctic_arena" target="_blank">
-          <img src={youtube} alt="youtube" />
-        </a> */}
-          <a href="https://www.facebook.com/thearcticarena/" target="_blank">
-            <img src={facebook} alt="facebook" />
-          </a>
-          <a href="https://www.instagram.com/thearcticarena/" target="_blank">
-            <img src={instagram} alt="instagram" />
-          </a>
-          {/* <a href="#" className="desk">
-            <img src={snapchat} alt="snapshat" />
-          </a>
-          <a href="#" className="desk">
-            <img src={tiktok} alt="tiktok" />
-          </a>
-          <a href="#" className="desk">
-            <img src={email} alt="email" />
-          </a> */}
-        </SocialLinks>
       </Container>
     </>
   );

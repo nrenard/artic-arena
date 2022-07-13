@@ -28,6 +28,7 @@ const ArcticArena: React.FC = () => {
           <p>
             An event from gamers, to gamers
             <br />
+            <br />
             Located in Longyearbyen, Svalbard, Arctic Arena hosts the ultimate
             Nordic gaming event during the polar night. From high tech fun to
             esports careers, we immerse players fully, from the food to the
