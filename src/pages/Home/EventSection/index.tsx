@@ -33,13 +33,18 @@ const EventSection: React.FC = () => {
       <EventRight>
         <h3>The world’s northernmost gaming event</h3>
         <p>
-          Welcome to the arctic server. The only gaming event that happens under the polar night.
+          Welcome to the arctic server. The only gaming event that happens under
+          the polar night.
           <br />
           <br />
-          Picture this: The sun is below the horizon all day and the northern lights dance across the sky. Who’s going to tell us it is time to stop playing? 
+          Picture this: The sun is below the horizon all day and the northern
+          lights dance across the sky. Who’s going to tell us it is time to stop
+          playing?
           <br />
           <br />
-          This is the setting for the world’s most exclusive gaming event. You are free to play all over town at different venues, in a fully immersive experience, with top tier digital infrastructure. 
+          This is the setting for the world’s most exclusive gaming event. You
+          are free to play all over town at different venues, in a fully
+          immersive experience, with top tier digital infrastructure.
           <br />
           <br />
           We call it the Arctic Arena. Are you ready?

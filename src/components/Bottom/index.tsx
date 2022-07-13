@@ -1,10 +1,17 @@
-import SocialMenu from 'components/SocialMenu';
-import React from 'react';
+import SocialMenu from "components/SocialMenu";
+import React from "react";
 
-import fakeLogo from 'assets/fake-logo.png';
-import bigLogo from 'assets/big-logo.svg';
+import fakeLogo from "assets/fake-logo.png";
+import bigLogo from "assets/big-logo.svg";
 
-import { Container, FirstLine, LogoMobile, SecondLine, WrapperBottomMenu, WrapperSponsors } from './styles';
+import {
+  Container,
+  FirstLine,
+  LogoMobile,
+  SecondLine,
+  WrapperBottomMenu,
+  WrapperSponsors,
+} from "./styles";
 
 const Bottom: React.FC = () => {
   return (
@@ -26,9 +33,9 @@ const Bottom: React.FC = () => {
         <img src={fakeLogo} alt="Fake Logo" />
       </WrapperSponsors> */}
 
-      <span style={{ color: "white" }}>© 2021 Arctic Arena</span>
+      <span style={{ color: "white" }}>© 2022 Arctic Arena</span>
     </Container>
   );
-}
+};
 
 export default Bottom;

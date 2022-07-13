@@ -25,7 +25,7 @@ const About: React.FC = () => {
   const myRef = useRef<any>(null);
   const venueParams = useLocation().search;
 
-  useEffect(() => window.scrollTo(0, 0), [])
+  useEffect(() => window.scrollTo(0, 0), []);
 
   const executeScroll = () => myRef.current && myRef.current.scrollIntoView();
 
@@ -55,25 +55,25 @@ const About: React.FC = () => {
         </SectionsContainer>
 
         <SocialLinks>
-          <a href="#">
-            <img src={twitch} alt="twitter" />
+          <a href="https://www.twitch.tv/thearcticarena" target="_blank">
+            <img src={twitch} alt="twitch" />
           </a>
-          <a href="#">
+          <a href="https://discord.gg/5PbtVQFrQF" target="_blank">
             <img src={discord} alt="discord" />
           </a>
-          <a href="#">
+          <a href="https://www.twitter.com/arctic_arena" target="_blank">
             <img src={twitter} alt="twitter" />
           </a>
-          <a href="#">
-            <img src={youtube} alt="youtube" />
-          </a>
-          <a href="#">
+          {/* <a href="https://www.twitter.com/arctic_arena" target="_blank">
+          <img src={youtube} alt="youtube" />
+        </a> */}
+          <a href="https://www.facebook.com/thearcticarena/" target="_blank">
             <img src={facebook} alt="facebook" />
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com/thearcticarena/" target="_blank">
             <img src={instagram} alt="instagram" />
           </a>
-          <a href="#" className="desk">
+          {/* <a href="#" className="desk">
             <img src={snapchat} alt="snapshat" />
           </a>
           <a href="#" className="desk">
@@ -81,7 +81,7 @@ const About: React.FC = () => {
           </a>
           <a href="#" className="desk">
             <img src={email} alt="email" />
-          </a>
+          </a> */}
         </SocialLinks>
       </Container>
     </>
