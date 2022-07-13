@@ -51,6 +51,7 @@ export const WrappValue = styled.div`
 `;
 
 export const Value = styled.div`
+  flex: 1;
   h3 {
     font-family: "Anthu";
     font-weight: 400;

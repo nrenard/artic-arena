@@ -26,15 +26,14 @@ const ArcticArena: React.FC = () => {
         <EventRight>
           <h3>What is Arctic Arena?</h3>
           <p>
-            Only the biggest and best gaming events company in the Arctic!
+            The most exclusive gaming events, in the Arctic. Located in
+            Longyearbyen, Svalbard, Arctic Arena hosts the ultimate Nordic
+            gaming event during the polar night - when the Arctic sky is pitch
+            black, illuminated only by the northern lights. But how did the
+            Arctic become the home of a video game revolution?
             <br />
             <br />
-            Located in Longyearbyen, Svalbard, Arctic Arena hosts the ultimate
-            Nordic gaming event every November, when the Arctic sky is pitch
-            black, illuminated only by the polar lights.
-            <br />
-            <br />
-            In 2020 the whole world experienced colossal changes. Technology
+            In 2020, the whole world experienced colossal changes. Technology
             became the way people connected, and the gaming industry’s growth
             exploded.
             <br />
@@ -45,13 +44,18 @@ const ArcticArena: React.FC = () => {
             with other entertainment mediums?
             <br />
             <br />
-            At Arctic Arena we focus on gaming — be it on consoles or cards,
-            using VRs or phone screens.
+            At Arctic Arena, we focus on gaming, from casual to competitive. We
+            host gaming areas, exclusive launches, and tournaments for all skill
+            levels and game genres. All of that during the polar night, when no
+            one can tell us to go out and enjoy the sunshine. We are aiming to
+            build a community that’s warm and welcoming with zero tolerance for
+            discrimination or hate, and we would love for you to be a part of
+            it.
             <br />
             <br />
-            From gamers, to gamers
+            An event from gamers to gamers.
           </p>
-          <Button>SIGN UP FORM GAMING UPDATES</Button>
+          {/* <Button>SIGN UP FORM GAMING UPDATES</Button> */}
         </EventRight>
       </WrappVenue>
       <SectionTitleMobile>ARCTIC ARENA</SectionTitleMobile>
